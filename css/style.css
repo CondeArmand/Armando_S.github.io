@@ -48,6 +48,8 @@ header {
     align-items: center;
 }
 
+
+
 .navbar {
     display: flex;
 }
@@ -200,6 +202,20 @@ main .Sobre_mim {
     flex-direction: column;
 }
 
+main .Sobre_mim a {
+    text-decoration: none;
+    color: var(--second-color);
+    font-size: 1.3rem;
+    transition: all 0.50s ease;
+}
+
+main .Sobre_mim a:hover {
+    color: #02dff6;
+    text-shadow: 0 0 5px #02dff6, 0 0 10px #02dff6, 0 0 15px #02dff6, 0 0 20px #02dff6, 0 0 30px #02dff6, 0 0 40px #02dff6, 0 0 55px #ff00ff, 0 0 75px #ff00ff;
+    border-bottom: #02dff6 1px solid;
+    transform: translateX(1px);
+}
+
 main .sobre_mim h2 {
     text-align: center;
     font-size: 1.3rem;
@@ -230,6 +246,29 @@ main .skills h2 {
     margin: 1.5rem 0;
     transition: all 0.50s ease;
 
+}
+
+main .skills h4 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--second-color);
+    margin: 1.5rem 0;
+    transition: all 0.50s ease;
+}
+
+main .skills a {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--second-color);
+    margin: 1.5rem 0;
+    transition: all 0.50s ease;
+}
+
+main .skills a:hover {
+    color: #02dff6;
+    text-shadow: 0 0 5px #02dff6, 0 0 10px #02dff6, 0 0 15px #02dff6, 0 0 20px #02dff6, 0 0 30px #02dff6, 0 0 40px #02dff6, 0 0 55px #ff00ff, 0 0 75px #ff00ff;
+    border-bottom: #02dff6 1px solid;
+    transform: translateX(1px);
 }
 
 main .skills .tecnologias {
@@ -377,7 +416,7 @@ footer #footer_copyright {
     text-align: center;
     font-size: 1.4rem;
     color: var(--second-color);
-    padding-bottom: 1.563rem;
+    padding-bottom: 7rem;
 }
 
 .hobbies_main .programacao {
@@ -433,9 +472,9 @@ footer #footer_copyright {
 }
 
 .hobbies_main .F1 .videos iframe {
-    width: 25rem;
-    height: 17rem;
-    margin: 1rem 2rem;
+    width: 50%;
+    height: 20rem;
+    margin: 1rem 4rem;
     border: #f60202 2px solid;
     border-radius: 1rem;
     transition: all .50s ease;
@@ -448,4 +487,60 @@ footer #footer_copyright {
     transform: scale(1.1);
 }
 
+.hobbies_main .F1 figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 1.563rem;
+}
 
+.hobbies_main .F1 figure img {
+    width: 75%;
+    height: 75%;
+    border: #0022ff 2px solid;
+    border-radius: 1rem;
+    transition: all .50s ease;
+}
+
+.hobbies_main .F1 .figure figcaption {
+    max-width: 70ch;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.0rem;
+    color: var(--second-color);
+    padding-bottom: 1.563rem;
+}
+
+.hobbies_main .F1 .figure figcaption a {
+    color: #02dff6;
+    text-decoration: underline;
+    transition: all .50s ease;
+}
+
+.hobbies_main .F1 .video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 1.563rem;}
+
+.hobbies_main .F1 .video iframe {
+    width: 90%;
+    height: 20rem;
+    border: #f60202 2px solid;
+    border-radius: 1rem;
+    transition: all .50s ease;
+    justify-content: center;
+}
+
+.hobbies_main .F1 .video p {
+    max-width: 70ch;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.0rem;
+    color: var(--second-color);
+    padding-bottom: 1.563rem;
+}
