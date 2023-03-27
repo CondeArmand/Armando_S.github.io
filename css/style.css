@@ -44,7 +44,7 @@ hr {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: var(--main-color);
+    background: #0D1117;
     color: var(--second-color);
     min-height: 100vh;
     max-width: 100%;
@@ -60,9 +60,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--main-color);
+    background: #161B22;
     padding: 28px 12%;
     transition: all 0.50s ease;
+    backdrop-filter: blur(10px);
+    opacity: 0.9;
+
 }
 
 .logo {
