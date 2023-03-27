@@ -309,6 +309,7 @@ main .skills .tecnologias {
     align-items: center;
     padding: 5%;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 main .skills .tecnologias i {
