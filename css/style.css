@@ -160,18 +160,16 @@ header {
     }
 
     .navbar a:hover {
-        color: var(--second-color);
-        text-shadow: 0 0 5px #02dff6, 0 0 10px #02dff6, 0 0 15px #02dff6, 0 0 20px #02dff6, 0 0 30px #02dff6, 0 0 40px #02dff6, 0 0 55px #ff00ff, 0 0 75px #ff00ff;
-        border: 1px solid var(--second-color);
-        border-radius: 10px;
+        color: var(--main-color);
+        text-shadow: none;
+        border: 0 solid var(--second-color);
         transform: translateX(1px);
     }
 
     .navbar a.active {
         color: var(--second-color);
-        text-shadow: 0 0 5px #02dff6, 0 0 10px #02dff6, 0 0 15px #02dff6, 0 0 20px #02dff6, 0 0 30px #02dff6, 0 0 40px #02dff6, 0 0 55px #ff00ff, 0 0 75px #ff00ff;
-        border: 1px solid var(--second-color);
-        border-radius: 10px;
+        text-shadow: none;
+        border: none;
         transform: translateX(1px);
     }
 
@@ -231,6 +229,14 @@ main .Sobre_mim {
     align-items: center;
     padding: 5%;
     flex-direction: column;
+}
+
+main .Sobre_mim p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #fff;
+    max-width: 70ch;
+    overflow: hidden;
 }
 
 main .Sobre_mim a {
@@ -494,7 +500,7 @@ footer .footer_copyright p {
     padding-bottom: 1.563rem;
 }
 
-.hobbies_main .F1 h2 {
+.hobbies_main .F1 h3 {
     text-align: center;
     font-size: 1.4rem;
     color: var(--second-color);
