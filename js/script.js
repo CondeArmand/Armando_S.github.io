@@ -12,8 +12,6 @@ window.onscroll = () => {
 }
 
 
-
-
 window.onload = function (){
     document.cookie = "SameSite=None; Secure";
 }
