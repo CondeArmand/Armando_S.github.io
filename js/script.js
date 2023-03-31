@@ -16,6 +16,15 @@ window.onload = function (){
     document.cookie = "SameSite=None; Secure";
 }
 
+navigator.storage.persist().then(persistent => {
+    if (persistent) {
+        console.log('Armazenamento persistente habilitado');
+    } else {
+        console.log('Armazenamento persistente não habilitado');
+    }
+});
+
+
 
 
 
