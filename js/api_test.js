@@ -16,10 +16,19 @@ const options = {
 
 
 function getGames() {
-    fetch(url, options)
-        .then(res => res.json())
+    fetch('https://api.igdb.com/v4/games', {
+        method: 'POST',
+        headers: {
+            'Client-ID': 'eq4mmsg7sdy337q1p6kyuagr2dyggo',
+            'Authorization': 'bearer lj390xrfmkuuy8ybj2esu1z5wp31uq',
+        },
+        body: 'fields name, summary;',
+
+        mode: 'no-cors',
+    })
+        .then(response => response.json())
         .then(data => console.log(data))
-        .catch(err => console.log(err))
+        .catch(error => console.error(error))
 }
 
 
