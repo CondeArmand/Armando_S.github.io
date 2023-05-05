@@ -22,9 +22,7 @@ function getGames() {
             'Client-ID': 'eq4mmsg7sdy337q1p6kyuagr2dyggo',
             'Authorization': 'bearer lj390xrfmkuuy8ybj2esu1z5wp31uq',
         },
-        body: 'fields name, summary;',
-
-        mode: 'no-cors',
+        body: 'fields name, summary;'
     })
         .then(response => response.json())
         .then(data => console.log(data))
